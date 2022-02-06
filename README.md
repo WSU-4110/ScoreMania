@@ -1,2 +1,2 @@
 # ScoreMania
-A Multi-Use TableTop Games Point Tracker
+A Point Tracker for Multiple Games
