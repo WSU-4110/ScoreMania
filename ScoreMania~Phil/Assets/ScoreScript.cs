@@ -25,4 +25,19 @@ public class ScoreScript : MonoBehaviour
     public void SubScore(){
         HealthScore -= 1;
     }
+    public void SubFive(){
+        HealthScore -= 5;
+    }
+    public void Commander(){
+        if(HealthScore == 40){
+            HealthScore += 0;
+        }else
+        HealthScore += 20;
+    }
+    public void Standard(){
+        if(HealthScore == 20){
+            HealthScore += 0;
+        }else
+        HealthScore -= 20;
+    }
 }
