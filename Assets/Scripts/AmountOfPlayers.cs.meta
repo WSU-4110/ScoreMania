@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+guid: c52eba6667ab2be42b75fdce3216d4ca
+=======
+guid: 6f08afdb9fbd39c4a9f7c2b1bd5d20d2
+>>>>>>> parent of 655d963 (Merge pull request #34 from WSU-4110/omar-from-main):Assets/Scripts/AmountOfPlayers.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
