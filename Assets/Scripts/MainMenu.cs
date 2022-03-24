@@ -12,6 +12,15 @@ public class MainMenu : MonoBehaviour
     {
         toggleGroup = GetComponent<ToggleGroup>();
     }
+
+    public void getGameName()
+    {
+        Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
+        if (toggle.name == "MTG")
+            aop.gameName = "MagicTheGathering";
+        else if (toggle.name == "YGO")
+            aop.gameName = "YuGiOh";
+    }
     public void getPlayerAmount()
     {
         Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
