@@ -3690,7 +3690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aop: {fileID: 11400000, guid: 8a66c937729f64549953a05a13a05b32, type: 2}
-  sceneIndex: 0
+  sceneIndex: 2
 --- !u!114 &2101522616
 MonoBehaviour:
   m_ObjectHideFlags: 0
