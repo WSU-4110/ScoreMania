@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes/1.unity.meta
 guid: 5a4b0f8588859b34eae9ff83b83ae4e4
+=======
+guid: 18e096a98c2704c40a818dd1214cd179
+folderAsset: yes
+>>>>>>> omar:Assets/Plugins/GitHub.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
