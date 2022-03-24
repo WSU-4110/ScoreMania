@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
-  productGUID: 80e5a604c37583c4ab1b239b3b4dba2e
+  productGUID: ae292e8a71dd05c438ac1a84154b1ae5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,10 +13,10 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: ScoreMania
+  productName: My project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.103773594, g: 0.09349413, b: 0.096064, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -153,7 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.ScoreMania
+    Standalone: com.DefaultCompany.My-project
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -220,7 +220,7 @@ PlayerSettings:
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
   metalAPIValidation: 1
-  iOSRenderExtraFrameOnPause: 1
+  iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
   appleDeveloperTeamID: 
   iOSManualSigningProvisioningProfileID: 
@@ -232,9 +232,9 @@ PlayerSettings:
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   shaderPrecisionModel: 0
-  clonedFromGUID: 00000000000000000000000000000000
-  templatePackageId: 
-  templateDefaultScene: 
+  clonedFromGUID: 10ad67313f4034357812315f3c407484
+  templatePackageId: com.unity.template.2d@5.0.0
+  templateDefaultScene: Assets/Scenes/SampleScene.unity
   useCustomMainManifest: 0
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0
@@ -269,9 +269,41 @@ PlayerSettings:
   m_BuildTargetIcons: []
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
-  m_BuildTargetGraphicsJobs: []
+  m_BuildTargetGraphicsJobs:
+  - m_BuildTarget: MacStandaloneSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: Switch
+    m_GraphicsJobs: 0
+  - m_BuildTarget: MetroSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: AppleTVSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: BJMSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: LinuxStandaloneSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: PS4Player
+    m_GraphicsJobs: 0
+  - m_BuildTarget: iOSSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: XboxOnePlayer
+    m_GraphicsJobs: 0
+  - m_BuildTarget: LuminSupport
+    m_GraphicsJobs: 0
+  - m_BuildTarget: AndroidPlayer
+    m_GraphicsJobs: 0
+  - m_BuildTarget: WebGLSupport
+    m_GraphicsJobs: 0
   m_BuildTargetGraphicsJobMode: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 150000000b000000
+    m_Automatic: 0
+  - m_BuildTarget: iOSSupport
+    m_APIs: 10000000
+    m_Automatic: 1
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -475,7 +507,7 @@ PlayerSettings:
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
   playerPrefsMaxSize: 32768
-  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
+  ps4Passcode: bi9UOuSpM2Tlh01vOzwvSikHFswuzleh
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -550,14 +582,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: ScoreMania
+  metroPackageName: 2D_BuiltInRenderer
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ScoreMania
+  metroApplicationDescription: 2D_BuiltInRenderer
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -618,12 +650,12 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: 
   organizationId: 
   cloudEnabled: 0
-  legacyClampBlendShapeWeights: 1
+  legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
