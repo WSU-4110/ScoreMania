@@ -62,4 +62,8 @@ public class scoreCount : MonoBehaviour
         lifeScore -= 50;
     }
 
+    public void resetScore()
+    {
+        lifeScore = 8000;
+    }
 }
