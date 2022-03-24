@@ -45,4 +45,10 @@ public class PlayerNameInput : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void continueButton()
+    {
+        getName();
+        SceneManager.LoadScene(aop.gameName);
+    }
 }

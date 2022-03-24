@@ -1365,7 +1365,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1210523568}
         m_TargetAssemblyTypeName: PlayerNameInput, Assembly-CSharp
-        m_MethodName: getName
+        m_MethodName: continueButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

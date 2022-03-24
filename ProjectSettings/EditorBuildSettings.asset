@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NameInputFields.unity
     guid: b0392987238d1dc4f9f22ec7c76ae255
+  - enabled: 1
+    path: Assets/Scenes/YuGiOh.unity
+    guid: b9e85893188171c43950625be6b6759d
+  - enabled: 1
+    path: Assets/Scenes/MagicTheGathering.unity
+    guid: 120853b87a3ad0b4ea8b1dcd3484919f
   m_configObjects: {}
