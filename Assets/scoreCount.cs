@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class scoreCount : MonoBehaviour
 {
+   
     private Text LifePoints;
     private int lifeScore;
     // Start is called before the first frame update
