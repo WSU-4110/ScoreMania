@@ -6,8 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-
-    path: Assets/Scenes/yu gi oh.unity
-
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 8db3b9e18190f2f43a48866e3fda7988
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/NameInputFields.unity
+    guid: b0392987238d1dc4f9f22ec7c76ae255
   m_configObjects: {}
