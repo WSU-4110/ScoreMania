@@ -1,14 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+
 public class SplashScreen : MonoBehaviour
 {
-    public float timer = 10f;    
-    void Update()
+    public VideoPlayer videoplayer;
+    public int sceneIndex;
+
+    void Start()
     {
-        timer -= Time.deltaTime;        
-        if (timer <= 0) { SceneManager.LoadScene(1); }
+        videoplayer = GetComponentInParent<VideoPlayer>();
+        StartCoroutine(WaitforVideoEnd());
+    }
+
+    private void Update()
+    {
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene(sceneIndex);
+        }
+    }
+
+    IEnumerator WaitforVideoEnd()
+    {
+        float videolength = (float)videoplayer.length;
+        yield return new WaitForSeconds(videolength);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
