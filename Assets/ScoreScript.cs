@@ -25,4 +25,17 @@ public class ScoreScript : MonoBehaviour
     public void SubScore(){
         HealthScore -= 1;
     }
+    public void SubFive()
+    {
+        if(HealthScore != 0)
+        HealthScore -= 5;
+    }
+    public void Commander()
+    {
+        HealthScore = 40;
+    }
+    public void Reset()
+    {
+        HealthScore = 20;
+    }
 }
