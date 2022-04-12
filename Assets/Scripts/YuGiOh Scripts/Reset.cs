@@ -14,6 +14,6 @@ public class Reset : MonoBehaviour
     // Update is called once per frame
     public void Reload()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(3);
     }
 }
