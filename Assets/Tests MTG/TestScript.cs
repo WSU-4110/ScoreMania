@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using OpenQA.Selenium.Chrome;
 
 public class TestScript
 {
-    // A Test behaves as an ordinary method
     [Test]
-    public void TestScriptSimplePasses()
+    public IEnumerator ButtonPushed()
     {
-        // Use the Assert class to test conditions
+        _button = GetComponent<Button>();
+        _button.onClick.AddListener(LoadScene);
+        Debug.Log(_button.onClick.GetPersistentEventCount());
     }
-
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator TestScriptWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+    
 }
