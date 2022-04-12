@@ -10,7 +10,8 @@ public class CustomValue
     [Test]
     public void CustomValueopens()
     {
-    
+
+        Assert.IsNotNull(Panel); 
     }
 
 
@@ -21,4 +22,5 @@ public class CustomValue
         // Use yield to skip a frame.
         yield return null;
     }
+
 }

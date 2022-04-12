@@ -10,7 +10,8 @@ public class minus1000
     [Test]
     public void minus1000succeeds()
     {
-        // Use the Assert class to test conditions
+        Assert.IsTrue(button != null);
+
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

@@ -10,9 +10,8 @@ public class minus100
     [Test]
     public void minus100succeeds()
     {
-        // Use the Assert class to test conditions
+        Assert.IsTrue(button != null);
     }
-
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
