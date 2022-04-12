@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Reset.cs.meta
+guid: 03623dddc1240ca40913d31537cde901
+=======
+guid: 9f2f212180208154fac3ab30d503cf17
+>>>>>>> parent of 655d963 (Merge pull request #34 from WSU-4110/omar-from-main):Assets/Scripts/SplashScreen.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
