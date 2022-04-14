@@ -14,4 +14,13 @@ public class PanelOpner : MonoBehaviour
             Panel.SetActive(true);
         }
     }
+
+    public void ClosePanel()
+    {
+
+        if (Panel != null)
+        {
+            Panel.SetActive(false);
+        }
+    }
 }
