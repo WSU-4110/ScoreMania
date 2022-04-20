@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MagicTheGathering.unity
     guid: 120853b87a3ad0b4ea8b1dcd3484919f
+  - enabled: 1
+    path: Assets/Scenes/MTG3Player.unity
+    guid: 82151bf2bf850d74a9d214a60485687a
+  - enabled: 1
+    path: Assets/Scenes/MTG4Player.unity
+    guid: c454ecf539208d749aea705fb789c641
   m_configObjects: {}

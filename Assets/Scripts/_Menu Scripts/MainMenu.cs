@@ -23,6 +23,9 @@ public class MainMenu : MonoBehaviour
             aop.gameName = "MagicTheGathering";
         else if (toggle.name == "YGO")
             aop.gameName = "YuGiOh";
+        
+        
+            
     }
     public void GetPlayerAmount()
     {
@@ -34,9 +37,15 @@ public class MainMenu : MonoBehaviour
         else if (toggle.name == "4Players")
             aop.amountOfPlayers = 4;
     }
+   
 
     public void GameStart()
     {
+        if (aop.gameName == "MagicTheGathering" && aop.amountOfPlayers == 3)
+            aop.gameName = "MTG3Player";
+
+        if (aop.gameName == "MagicTheGathering" && aop.amountOfPlayers == 4)
+            aop.gameName = "MTG4Player";
         SceneManager.LoadScene(sceneIndex);
     }
 }
