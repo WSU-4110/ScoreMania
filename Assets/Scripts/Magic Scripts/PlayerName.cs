@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerName : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AmountOfPlayers aop;
+    public PlayerNameInput p;
+    private Text name;
+    void Name()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (aop.amountOfPlayers == 2)
+            name.text = aop.playername1;
     }
 }
+        
+        
+        
+
+        
+
