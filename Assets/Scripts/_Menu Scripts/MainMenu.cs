@@ -7,16 +7,16 @@ public class MainMenu : MonoBehaviour
 {
     ToggleGroup toggleGroup;
     public AmountOfPlayers aop;
-    public int sceneIndex; 
+    public int sceneIndex;
     void Start()
     {
         toggleGroup = GetComponent<ToggleGroup>();
         //calls to get currently selected values as the values selected on last run of the program persist since they're stored on a scriptable object
-        getGameName();
-        getPlayerAmount();
+        GetGameName();
+        GetPlayerAmount();
     }
 
-    public void getGameName()
+    public void GetGameName()
     {
         Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
         if (toggle.name == "MTG")
@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
         else if (toggle.name == "YGO")
             aop.gameName = "YuGiOh";
     }
-    public void getPlayerAmount()
+    public void GetPlayerAmount()
     {
         Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
         if (toggle.name == "2Players")
@@ -34,10 +34,9 @@ public class MainMenu : MonoBehaviour
         else if (toggle.name == "4Players")
             aop.amountOfPlayers = 4;
     }
-    
-    public void gameStart()
+
+    public void GameStart()
     {
         SceneManager.LoadScene(sceneIndex);
     }
 }
-public enum Games {yugioh,MagicTheGathering};

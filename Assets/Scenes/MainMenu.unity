@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2101522615}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: getGameName
+        m_MethodName: GetGameName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -613,7 +613,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1178514383}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: getPlayerAmount
+        m_MethodName: GetPlayerAmount
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1370,7 +1370,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2101522615}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: gameStart
+        m_MethodName: GameStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1380,9 +1380,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1178514383}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: gameStart
+        m_MethodName: GameStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2345,7 +2345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2101522615}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: getGameName
+        m_MethodName: GetGameName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3016,7 +3016,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1178514383}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: getPlayerAmount
+        m_MethodName: GetPlayerAmount
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3114,7 +3114,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1178514383}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: getPlayerAmount
+        m_MethodName: GetPlayerAmount
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class PlayerNameInput : MonoBehaviour
 {
     public AmountOfPlayers aop;
@@ -34,21 +36,21 @@ public class PlayerNameInput : MonoBehaviour
             player4.SetActive(true);
         }
     }
-    public void getName() 
-    {        
-        aop.playername1 = player1.GetComponentInChildren<Text>().text;
-        aop.playername2 = player2.GetComponentInChildren<Text>().text;
-        aop.playername3 = player3.GetComponentInChildren<Text>().text;
-        aop.playername4 = player4.GetComponentInChildren<Text>().text;
+    public void GetName() 
+    {
+        aop.playername1 = player1.GetComponentInChildren<TextMeshProUGUI>().text;
+        aop.playername2 = player2.GetComponentInChildren<TextMeshProUGUI>().text;
+        aop.playername3 = player3.GetComponentInChildren<TextMeshProUGUI>().text;
+        aop.playername4 = player4.GetComponentInChildren<TextMeshProUGUI>().text;
     }
-    public void backButton() 
+    public void BackButton()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void continueButton()
+    public void NextButton()
     {
-        getName();
+        GetName();
         SceneManager.LoadScene(aop.gameName);
     }
 }
