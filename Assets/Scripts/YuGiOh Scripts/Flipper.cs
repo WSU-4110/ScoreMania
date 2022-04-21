@@ -5,30 +5,30 @@ using UnityEngine.UI;
 
 public class Flipper : MonoBehaviour
 {
+    private const bool V = true;
     public Sprite[] CoinImages;
-    public Image side;
-    int Val;
+    public Image Side;
+    int currentVal;
     public int Coinvalue;
+
 
     public void Flip()
     {
-        side.gameObject.GetComponent<Animator>().enabled = true;
-        side.gameObject.GetComponent<Animator>().ResetTrigger("FlipCoin");
-        side.gameObject.GetComponent<Animator>().SetTrigger("FlipCoin");
-
+        Side.gameObject.GetComponent<Animator>().enabled= V;
+        Side.gameObject.GetComponent<Animator>().ResetTrigger("FlipCoin");
+        Side.gameObject.GetComponent<Animator>().SetTrigger("FlipCoin");
     }
-
     public void FlipTheCoin()
     {
-        side.gameObject.GetComponent<Animator>().enabled = false;
-        side.sprite = FlipCoin();
-        Coinvalue = Val;
+        Side.gameObject.GetComponent<Animator>().enabled = false;
+        Side.sprite = FlipCoin();
+        Coinvalue = currentVal;
     }
 
     public Sprite FlipCoin()
     {
-        int x = Mathf.RoundToInt(Random.Range(0, 1));
-        Val = x + 1;
+        int x = Mathf.RoundToInt(Random.Range(0, CoinImages.Length - 1));
+        currentVal = x ;
         return CoinImages[x];
     }
 }

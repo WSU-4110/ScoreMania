@@ -10,7 +10,8 @@ public class scoreCount : MonoBehaviour
 
     private Text LifePoints;
     private int lifeScore;
-    Text InputField;
+
+    public Text InputField;
     string inputString;
     string operatorsym; 
     int i = 0;
@@ -76,29 +77,30 @@ public class scoreCount : MonoBehaviour
         lifeScore = 8000;
     }
 
-    public void Calculator()
-    {
-
-
-    }
 
     public void ButtonPressed()
     {
-        clear();
+        if (displayed == true)
+        {
+            InputField.text = "";
+            inputString = "";
+            displayed = false;
+        }
+
+
         string buttonVal = EventSystem.current.currentSelectedGameObject.name;
-        int arg;
         inputString += buttonVal;
 
 
-
-        if ( int.TryParse(buttonVal, out arg))
+        if (int.TryParse(buttonVal, out int arg))
         {
-            if (i > 1) i = 0; 
+            if (i > 1) i = 0;
             number[i] = arg;
-            i += 1; 
-        } else
+            i += 1;
+        }
+        else
         {
-            switch(buttonVal)
+            switch (buttonVal)
             {
                 case "+":
                     operatorsym = "+";
@@ -114,25 +116,26 @@ public class scoreCount : MonoBehaviour
                             break;
                         case "-":
                             result = lifeScore - number[0];
-                            break; 
+                            break;
                     }
-                    displayed = true; 
+                    displayed = true;
                     inputString = result.ToString();
-                    number = new int[1]; 
-                    break; 
+                    number = new int[1];
+                    break;
 
             }
         }
-    
 
-        InputField.text = inputString; 
+
+        InputField.text = inputString;
+
 
 
     }
 
-    public void clear()
+    public void Clear()
     {
-        if ( displayed == true)
+        if (displayed == true)
         {
             InputField.text = "";
             inputString = "";

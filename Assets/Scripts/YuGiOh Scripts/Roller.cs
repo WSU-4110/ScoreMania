@@ -13,6 +13,7 @@ public class Roller : MonoBehaviour
 
     public void Roll()
     {
+     
         One.gameObject.GetComponent<Animator>().enabled = true;
         One.gameObject.GetComponent<Animator>().ResetTrigger("RollDice");
         One.gameObject.GetComponent<Animator>().SetTrigger("RollDice");
