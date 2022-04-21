@@ -24,13 +24,6 @@ public class Roller : MonoBehaviour
         DiceOneValue = currentVal;
     }
 
-    //public void RollDiceTwoFuntion()
-    //{
-        //Two.gameObject.GetComponent<Animator>().enabled = false;
-       // Two.sprite = RollDice();
-        //DiceTwoValue = currentVal;
-   // }
-
     public Sprite RollDice()
     {
         int x = Mathf.RoundToInt(Random.Range(0, DiceImages.Length - 1));
