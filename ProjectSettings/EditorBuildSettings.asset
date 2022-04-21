@@ -16,20 +16,8 @@ EditorBuildSettings:
     guid: b0392987238d1dc4f9f22ec7c76ae255
   - enabled: 1
     path: Assets/Scenes/YuGiOh.unity
-    guid: 1cc6e5b0570366a4a908371f05899c4d
+    guid: b9e85893188171c43950625be6b6759d
   - enabled: 1
     path: Assets/Scenes/MagicTheGathering.unity
     guid: 7d82f1b0bf6fb2f4c9a5e2f3bf6a1621
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
