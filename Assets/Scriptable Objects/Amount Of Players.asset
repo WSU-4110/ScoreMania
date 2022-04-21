@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca18109d2d6cea4f890d9c045fa7ac6, type: 3}
   m_Name: Amount Of Players
   m_EditorClassIdentifier: 
-  amountOfPlayers: 0
+  amountOfPlayers: 2
   gameName: 
   playername1: 
   playername2: 
