@@ -9,8 +9,7 @@ public class MainMenu : MonoBehaviour
     public AmountOfPlayers aop;   
     public GameObject YuGiOhSC;
     public GameObject CB;
-    public GameObject SB;
-    public int sceneIndex;
+    public GameObject SB;    
     void Start()
     {
         toggleGroup = GetComponent<ToggleGroup>();
@@ -43,12 +42,7 @@ public class MainMenu : MonoBehaviour
             YuGiOhSC.SetActive(true);
             CB.SetActive(false);
             SB.SetActive(false);            
-        }       
-        if (aop.gameName == "MagicTheGathering" && aop.amountOfPlayers == 3)
-            aop.gameName = "MTG3Player";
-
-        if (aop.gameName == "MagicTheGathering" && aop.amountOfPlayers == 4)
-            aop.gameName = "MTG4Player";
-        SceneManager.LoadScene(sceneIndex);
+        }
+        SceneManager.LoadScene(2);
     }
 }
