@@ -59,6 +59,12 @@
 <!-- CONTRIBUTORS -->
 ## Contributors
 
+- Omar Alsaed
+- Brian Hohentanner
+- Nader Rahman
+- Phillip Kaiser
+- Maruf Sourav
+- Nick Maassen
 
 <!-- WIKI -->
 ## Wiki
