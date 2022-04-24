@@ -69,4 +69,5 @@
 <!-- WIKI -->
 ## Wiki
 
+ - For detailed project overview and planning, please visit our wiki: https://github.com/WSU-4110/ScoreMania/wiki
 
