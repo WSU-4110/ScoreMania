@@ -28,7 +28,7 @@
     </li>
     <li>
       <a href="#built-with">Built With</a>
-      ScoreMania was built with Unity which is a cross-platform game engine used to develop video games and simulations for computers, consoles, or mobile devices.
+      
     </li>
     <li>
       <a href="#installation">Installation</a>
@@ -51,7 +51,7 @@
 
 <!-- BUILT WITH -->
 ## Built With
-
+ScoreMania was built with Unity which is a cross-platform game engine used to develop video games and simulations for computers, consoles, or mobile devices.
 
 <!-- INSTALLATION -->
 ## Installation
