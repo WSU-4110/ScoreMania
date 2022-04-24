@@ -48,7 +48,7 @@
 
 <!-- FEATURES -->
 ## Features
-
+Here we have all the abilities of the app. Being able to seamlessly transition from game to game. As well as tracking the life points and health of both you and your competitors. But wait there's more! With the new introduction of dice rolling and a coin flip feature, You can roll into the future and make your friends flip out (kill me). Each button is formatted to be easily used on your mobile device. The values of each button are made to be common within their respective games. Finally we made the ability to add more players so it isn't always a gruesome twosome. So try it out today!
 <!-- BUILT WITH -->
 ## Built With
 ScoreMania was built with Unity which is a cross-platform game engine used to develop video games and simulations for computers, consoles, or mobile devices.
