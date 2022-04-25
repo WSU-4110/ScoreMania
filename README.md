@@ -58,7 +58,7 @@ ScoreMania was built with Unity which is a cross-platform game engine used to de
 
 <!-- INSTALLATION -->
 ## Installation
-
+- Detailed installation instructions can be found here: https://github.com/WSU-4110/ScoreMania/blob/main/install.md
 
 <!-- CONTRIBUTORS -->
 ## Contributors
@@ -72,6 +72,5 @@ ScoreMania was built with Unity which is a cross-platform game engine used to de
 
 <!-- WIKI -->
 ## Wiki
-
- - For detailed project overview and planning, please visit our wiki: https://github.com/WSU-4110/ScoreMania/wiki
+- For detailed project overview and planning, please visit our wiki: https://github.com/WSU-4110/ScoreMania/wiki
 
