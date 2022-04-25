@@ -1,45 +1,56 @@
-name: Build project
+name: ScoreMania
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  buildForAllSupportedPlatforms:
-    name: Build for ScoreMania
+  build:
+    name: Build ScoreMania
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        targetPlatform:
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - iOS # Build an iOS player.
-          - Android # Build an Android .apk standalone app.
     steps:
+      # Activate
+      - name: Unity - Activate
+        uses: game-ci/unity-activate@v2.0.0
+        
+      # Checkout
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
           lfs: true
+
+      # Cache
       - name: Cache
         uses: actions/cache@v3.0.2
         with:
-          path: C:\Users\Omar\Desktop\CSC 4111\ScoreMania\Library
+          path: C:/Users/Omar/Desktop/CSC 4111/ScoreMania/Library
           key: Library-ScoreMania-${{ matrix.targetPlatform }}
           restore-keys: |
-            Library-ScoreMania
+            Library-ScoreMania-
             Library-
-      - name: Build project        
+
+      # Test
+      - name: Run tests
+        uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: C:/Users/Omar/Desktop/CSC 4111/ScoreMania
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      # Build
+      - name: Build project
         uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          projectPath: ${{ matrix.projectPath }}
-          targetPlatform: ${{ matrix.targetPlatform }}
-          buildMethod: UnityBuilderAction.BuildScript.Build
-          unityVersion: auto
+          targetPlatform: 
+            - StandaloneWindows64
+            - iOS
+            - Androids
+
+      # Output
       - uses: actions/upload-artifact@v2
         with:
-          name: Build-${{ matrix.targetPlatform }}
-          path: build/${{ matrix.targetPlatform }}
-          
+          name: Build
+          path: build
