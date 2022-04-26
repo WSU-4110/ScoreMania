@@ -68,7 +68,7 @@ jobs:
           name: Test results
           path: artifacts
 
-    # Windows Build
+  # Windows Build
   buildWindows:
     needs: testRunner
     name: Build for Windows 🖥️
@@ -113,7 +113,8 @@ jobs:
         name: build-StandaloneWindows64
         path: build/StandaloneWindows64
 
-  buildWindows:
+  # iOS Build
+  buildiOS:
     needs: testRunner
     name: Build for iOS 🍎
     runs-on: ubuntu-latest
@@ -157,7 +158,8 @@ jobs:
         name: build-iOS
         path: build/iOS
 
-  buildWindows:
+  # Android Build
+  buildAndroid:
     needs: testRunner
     name: Build for Android 🤖
     runs-on: ubuntu-latest
