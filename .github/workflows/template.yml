@@ -1,4 +1,4 @@
-name: GameCI Template 🎮
+name: ScoreMania 🎮
 
 on: push
 
@@ -46,24 +46,26 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-          
+
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
           path: Library
-          key: Library-test-project-${{ matrix.targetPlatform }}
+          key: Library-ScoreMania-${{ matrix.targetPlatform }}
           restore-keys: |
-            Library-test-project-
+            Library-ScoreMania-
             Library-
 
-      - uses: game-ci/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@v2.0.2
+        id: TestRunner
         with:
           testMode: ${{ matrix.testMode }}
           checkName: ${{ matrix.testMode }} test results
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.0.0
+        if: always()
         with:
           name: Test results (${{ matrix.testMode }})
-          path: ${{ steps.testRunner.outputs.artifactsPath }}
+          path: ${{ steps.myTestStep.outputs.artifactsPath }}
 
