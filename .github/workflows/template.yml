@@ -67,5 +67,5 @@ jobs:
         if: always()
         with:
           name: Test results (${{ matrix.testMode }})
-          path: ${{ steps.myTestStep.outputs.artifactsPath }}
+          path: ${{ steps.TestRunner.outputs.artifactsPath }}
 
